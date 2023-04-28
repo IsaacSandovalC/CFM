@@ -7,6 +7,11 @@
     "start": "next start -p 3001",
     "lint": "next lint"
   },
+
+  "engines": {
+    "node": ">=18.12.1"
+  },
+  
   "dependencies": {
     "@directus/sdk": "^10.3.0",
     "@metismenu/react": "^0.0.3",
