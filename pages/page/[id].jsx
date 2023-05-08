@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import Layout from "../layout/layout";
-import SidebarComponent from "../layout/SidebarComponent";
-import Title from "../layout/title";
+import Layout from "/layout/layout.js";
+import SidebarComponent from "/layout/SidebarComponent.js";
+import Title from "/layout/title.js";
 import Link from "next/link";
-import { getInitialConten } from "../components/store/company/index";
+import { getInitialConten } from "/components/store/company/index.js";
 import { useDispatch } from "react-redux";
-import LoadingFullPage from "../components/utilities/LoadingFullPage";
-import UsefulLinks from "/Directus/SDKDirectus/services/UsefulLinks";
+import LoadingFullPage from "/components/utilities/LoadingFullPage.jsx";
+import UsefulLinks from "/Directus/SDKDirectus/services/UsefulLinks.js";
 
 export default function ({ id }) {
   const [loading, setLoading] = useState();

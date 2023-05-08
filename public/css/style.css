@@ -3817,6 +3817,7 @@ blockquote{
 	overflow: hidden;
 	display: block;
 	position: relative;
+	max-width: 64rem;
 }
 .industify_slider_alpha[data-text-effect="enabled"] .title_holder .in > * > span{
 	display: block;
@@ -5546,9 +5547,9 @@ blockquote{
 	right: 0;
 	bottom: 0;
 	background-size: cover;
-	background-position: center center;
+    background-position: bottom center;
 	background-repeat: no-repeat;
-	opacity: 1;
+	opacity: .2;
 }
 .blog_section .fn_cs_main_title{
 	margin-bottom: 50px;

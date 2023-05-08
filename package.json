@@ -5,13 +5,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3001",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
 
   "engines": {
-    "node": ">=18.12.1"
+    "node": "18.12.1"
   },
-  
+
   "dependencies": {
     "@directus/sdk": "^10.3.0",
     "@metismenu/react": "^0.0.3",

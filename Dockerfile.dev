@@ -1,0 +1,21 @@
+FROM node:18.12.1-alpine
+
+# Creando el directorio de trabajo
+RUN npm i -g nodemon
+RUN mkdir -p /app
+
+# Estableciendo el directorio de trabajo
+WORKDIR /app
+
+# Copiando el package.json y el package-lock.json
+COPY package.json /app
+COPY package-lock.json /app
+
+# Instalando las dependencias
+RUN yarn install
+
+# Copiando el resto de los archivos
+COPY . /app
+
+# Inicializando con nodemon
+CMD ["yarn", "dev"]
